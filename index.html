@@ -901,13 +901,11 @@
             hideRecordResultsModal();
             
             // If this was the last round, show completion modal
-            if (currentRound === currentTournament.numberOfRounds) {
-                tournamentCompleteModal.classList.remove('hidden');
-            } else {
+            
                 // Otherwise re-render the matches section
                 renderMatches();
                 renderStandings();
-            }
+            
         }
         
         function showPreviousRound() {
